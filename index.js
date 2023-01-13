@@ -15,7 +15,7 @@ app.use("/api/post", require("./router/Post.js"));
 // User 관련 Router 연결
 app.use("/api/user", require("./router/User.js"));
 
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "./build")));
 
 app.listen(port, () => {
   mongoose
